@@ -1,0 +1,363 @@
+{
+  "alpha_lower_characters" : "abcdefghijklmnopqrstuvwxyz",
+  "alpha_upper_characters" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "symbol_characters" : "!@#$%^&*()-_+=[]\\{}|;':./<>?"
+  "number_characters" : "0123456789",
+  "splash_screen" : [
+    [
+      {
+        "text": "MIDIZilla"
+      }
+    ],
+    [
+      {
+        "text": "V0.2"
+      }
+    ],
+    [
+      {
+        "text" : "By Jonas Temple"
+      }
+    ]
+  ],
+  "midi_screen" : [
+    [
+      {
+        "text" : "",
+        "id" : "cc1"
+      },
+      {
+        "text" : "",
+        "id" : "cc2"
+      },
+      {
+        "text": "",
+        "id" : "cc3"
+      }
+    ],
+    [
+      {
+        "text" : "",
+        "id" : "cc4"
+      },
+      {
+        "text" : "",
+        "id" : "cc5"
+      },
+      {
+        "text" : "",
+        "id" : "cc6"
+      }
+    ],
+    [
+      {
+        "text" : "",
+        "id" : "ex"
+      }
+    ]
+  ],
+  "config_screen" : [
+    [
+      { 
+        "text" : "",
+        "id" : "mapping_label"
+      }
+    ],
+    [
+      { 
+        "text" : "Select Mapping",
+        "select" : true,
+        "id" : "select_mapping"
+      }
+    ],
+    [
+      { 
+        "text" : "Edit Mapping",
+        "select" : true,
+        "id" : "edit_mapping",
+        "next" : "edit_mapping"
+      }
+    ],
+    [
+      { 
+        "text" : "Test LEDs",
+        "select" : true,
+        "id" : "test_leds"
+      }
+    ],
+    [
+      {
+        "text" : "Back",
+        "select" : true,
+        "previous" : "Midi"
+      }
+    ]
+  ],
+  "edit_mapping" : [
+    [
+      { 
+        "text" : "Switch Editing",
+        "select" : true,
+        "id" : "switch_mapping",
+        "next" : "config_switch"
+      }
+    ],
+    [
+      { 
+        "text" : "Save Mapping As...",
+        "select" : true,
+        "id" : "savemappingas"
+      }
+    ],
+    [
+      { 
+        "text" : "Delete Mapping",
+        "select" : true,
+        "id" : "deletemapping",
+        "key" : ""
+      }
+    ],
+    [
+      {
+        "text" : "Back",
+        "select" : true,
+        "previous" : "config_screen"
+      }
+    ]
+  ],
+ "select_mapping" : [
+    [
+      {
+        "text" : "Select Map",
+        "id" : "select_map_label"
+      }
+    ],
+    [
+      {
+        "text" : "default",
+        "select" : true,
+        "id" : "selectmapping",
+        "key" : ""
+      }
+    ],
+    [
+      {
+        "text" : "Back",
+        "id" : "select_mapping_back",
+        "select" : true,
+        "previous" : "config_screen"
+      }
+    ]
+ ],
+ "save_mapping" : [
+    [
+      {
+        "text" : "Save Mapping As...",
+      }
+    ],
+    [
+      {
+        "text" : "",
+        "select" : true,
+        "id" : "mappingname",
+        "edit" : true
+      }
+    ],
+    [
+      {
+        "text" : "Back",
+        "select" : true,
+        "previous" : "config_screen"
+      }
+    ]
+ ],
+ "config_switch" : [
+    [
+      {
+        "text" : "Sw 1",
+        "select" : true,
+        "id" : "editswitch",
+        "key" : "cc1"
+      },
+      {
+        "text" : "Sw 2",
+        "select" : true,
+        "id" : "editswitch",
+        "key" : "cc2"
+      },
+      {
+        "text": "Sw 3",
+        "select": true,
+        "id" : "editswitch",
+        "key" : "cc3"
+      }
+    ],
+    [
+      {
+        "text" : "Sw 4",
+        "select" : true,
+        "id" : "editswitch",
+        "key" : "cc4"
+      },
+      {
+        "text" : "Sw 5",
+        "select" : true,
+        "id" : "editswitch",
+        "key" : "cc5"
+      },
+      {
+        "text" : "Sw 6",
+        "select" : true,
+        "id" : "editswitch",
+        "key" : "cc6"
+      }
+    ],
+    [
+      {
+        "text" : "Ex",
+        "select" : true,
+        "id" : "editswitch",
+        "key" : "ex"
+      }
+    ],
+    [
+      {
+        "text" : "Back",
+        "select" : true,
+        "previous" : "config_screen"
+      }
+    ]
+  ],
+  "enable_switch" : [
+    [
+      {
+        "text" : "",
+        "id" : "switch_label"
+       }
+    ],
+    [
+      {
+        "text" : "Enable Switch",
+        "select" : true,
+        "id" : "enableswitch",
+        "key" : ""
+       }
+    ],
+    [
+      {
+        "text" : "Back",
+        "select" : true,
+        "id" : "Back",
+        "previous" : "config_switch"
+      }
+    ]
+  ],
+  "edit_switch" : [
+    [
+      {
+        "text" : "",
+        "id" : "switch_label"
+      }
+    ],
+    [
+      {
+        "text" : "Edit Control Code",
+        "select" : true,
+        "id" : "editcc"
+      }
+    ],
+    [
+      {
+        "text" : "Edit Label",
+        "select" : true,
+        "id" : "editlabel"
+      }
+    ],
+    [
+      {
+        "text" : "Disable Switch",
+        "select" : true,
+        "id" : "disableswitch",
+        "key" : ""
+       }
+    ],
+    [
+      {
+        "text" : "Back",
+        "select" : true,
+        "previous" : "config_switch"
+      }
+    ]
+  ],
+  "edit_cc" : [
+    [
+      {
+        "text" : "Enter Control Code:"
+      }
+    ],
+    [
+      {
+        "text" : "",
+        "edit" : true,
+        "type" : "number",
+        "select" : true,
+        "id" : "ccvalue",
+        "key" : "",
+        "min_value" : 0
+        "max_value" : 127
+      }
+    ]
+  ],
+  "edit_label" : [
+    [
+      {
+        "text" : "Enter Label Value:"
+      }
+    ],
+    [
+      {
+        "text" : "label value",
+        "edit" : true,
+        "type" : "alpha",
+        "id" : "labelvalue",
+        "select" : true,
+        "key" : "",
+        "max_len" : 4
+      }
+    ]
+  ],
+  "confirm_save" : [
+    [
+      {
+        "text" : "Do you want to save change?"
+      }
+    ],
+    [
+      {
+        "text": "Yes",
+        "select": true,
+        "id": "saveyes"
+      },
+      {
+        "text" : "No",
+        "select" : true,
+        "id" : "saveno"
+      }
+    ]
+  ],
+  "cannot_delete" : [
+    [
+      {
+        "text" : "Can't delete default"
+      }
+    ],
+    [
+      {
+        "text": "Ok",
+        "select": true,
+        "id": "ok",
+        "previous" : "config_screen"
+      }
+    ]
+  ]
+}
